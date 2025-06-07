@@ -9,6 +9,4 @@ import com.compact.todosimple.models.User;
 
 @Repository                                        // modelo, tipo do id
 public interface UserRepository extends JpaRepository<User, Long> {
-
-
 }
