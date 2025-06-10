@@ -23,7 +23,7 @@ public class UserService {
 
     @Transactional  // usado para inserções no banco. "Ou faz tudo, ou não faz nada. Não atualiza dados parcialmente"
     public User create(User obj) {
-        // garanmte que um novo usuário será criado
+        // garante que um novo usuário será criado
         obj.setId(null);
 
         obj = this.userRepository.save(obj);
