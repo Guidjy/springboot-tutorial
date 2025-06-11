@@ -3,6 +3,7 @@ package com.compact.todosimple.controllers;
 import com.compact.todosimple.models.Task;
 import com.compact.todosimple.repositories.TaskRepository;
 import com.compact.todosimple.services.TaskService;
+import com.compact.todosimple.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -22,6 +23,8 @@ public class TaskController {
 
     @Autowired
     private TaskRepository taskRepository;
+    @Autowired
+    private UserService userService;
 
 
     // Read
@@ -33,6 +36,8 @@ public class TaskController {
 
     @GetMapping("/user/{userId}")
     public ResponseEntity<List<Task>> findAllByUserId(@PathVariable Long userId) {
+        // verifica se o usuário existe
+        userService.findById(userId);
         List<Task> tasks = this.taskService.findAllByUserId(userId);
         return ResponseEntity.ok().body(tasks);
     }
