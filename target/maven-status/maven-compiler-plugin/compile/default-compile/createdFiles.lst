@@ -1,1 +1,12 @@
+com\compact\todosimple\models\User$CreateUser.class
+com\compact\todosimple\controllers\TaskController.class
+com\compact\todosimple\services\UserService.class
+com\compact\todosimple\models\User$UpdateUser.class
+com\compact\todosimple\models\Task.class
+com\compact\todosimple\services\TaskService.class
+com\compact\todosimple\controllers\UserController.class
+com\compact\todosimple\repositories\UserRepository.class
 com\compact\todosimple\TodosimpleApplication.class
+com\compact\todosimple\repositories\TaskRepository.class
+com\compact\todosimple\configs\WebConfig.class
+com\compact\todosimple\models\User.class
