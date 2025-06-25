@@ -2,6 +2,7 @@ package com.compact.todosimple.services;
 
 import com.compact.todosimple.models.User;
 import com.compact.todosimple.repositories.UserRepository;
+import com.compact.todosimple.services.exceptions.DataBindingViolationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -44,7 +45,7 @@ public class UserService {
         try {
             this.userRepository.deleteById(id);
         } catch (Exception e) {
-            throw new RuntimeException("Não é possível excluir póis hà entidades relacionadas.");
+            throw new DataBindingViolationException("Não é possível excluir póis hà entidades relacionadas.");
         }
     }
 }

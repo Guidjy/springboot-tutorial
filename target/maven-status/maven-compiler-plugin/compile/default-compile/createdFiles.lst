@@ -4,9 +4,14 @@ com\compact\todosimple\services\UserService.class
 com\compact\todosimple\models\User$UpdateUser.class
 com\compact\todosimple\models\Task.class
 com\compact\todosimple\services\TaskService.class
+com\compact\todosimple\exceptions\ErrorResponse$ValidationError.class
 com\compact\todosimple\controllers\UserController.class
 com\compact\todosimple\repositories\UserRepository.class
+com\compact\todosimple\exceptions\GlobalExceptionHandler.class
 com\compact\todosimple\TodosimpleApplication.class
 com\compact\todosimple\repositories\TaskRepository.class
+com\compact\todosimple\services\exceptions\ObjectNotFoundException.class
 com\compact\todosimple\configs\WebConfig.class
+com\compact\todosimple\services\exceptions\DataBindingViolationException.class
+com\compact\todosimple\exceptions\ErrorResponse.class
 com\compact\todosimple\models\User.class

@@ -3,6 +3,8 @@ package com.compact.todosimple.services;
 import com.compact.todosimple.models.Task;
 import com.compact.todosimple.models.User;
 import com.compact.todosimple.repositories.TaskRepository;
+import com.compact.todosimple.services.exceptions.DataBindingViolationException;
+import com.compact.todosimple.services.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,7 +23,7 @@ public class TaskService {
 
     public Task findById(Long id) {
         Optional<Task> task = taskRepository.findById(id);
-        return task.orElseThrow(() -> new RuntimeException("Tarefa não encontrada. Id: " + id + ", Tipo: " + Task.class.getName()));
+        return task.orElseThrow(() -> new ObjectNotFoundException("Tarefa não encontrada. Id: " + id + ", Tipo: " + Task.class.getName()));
     }
 
     public List<Task> findAllByUserId(Long userId) {
@@ -50,7 +52,7 @@ public class TaskService {
         try {
             this.taskRepository.deleteById(id);
         } catch (Exception e) {
-            throw new RuntimeException("Não é possível excluir. " + e);
+            throw new DataBindingViolationException("Não é possível excluir. " + e);
         }
     }
 }

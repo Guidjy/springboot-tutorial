@@ -1,10 +1,14 @@
 C:\Users\guipp\OneDrive\햞ea de Trabalho\todosimple\src\main\java\com\compact\todosimple\repositories\UserRepository.java
 C:\Users\guipp\OneDrive\햞ea de Trabalho\todosimple\src\main\java\com\compact\todosimple\services\TaskService.java
 C:\Users\guipp\OneDrive\햞ea de Trabalho\todosimple\src\main\java\com\compact\todosimple\configs\WebConfig.java
+C:\Users\guipp\OneDrive\햞ea de Trabalho\todosimple\src\main\java\com\compact\todosimple\exceptions\ErrorResponse.java
+C:\Users\guipp\OneDrive\햞ea de Trabalho\todosimple\src\main\java\com\compact\todosimple\models\User.java
+C:\Users\guipp\OneDrive\햞ea de Trabalho\todosimple\src\main\java\com\compact\todosimple\exceptions\GlobalExceptionHandler.java
+C:\Users\guipp\OneDrive\햞ea de Trabalho\todosimple\src\main\java\com\compact\todosimple\repositories\TaskRepository.java
+C:\Users\guipp\OneDrive\햞ea de Trabalho\todosimple\src\main\java\com\compact\todosimple\services\exceptions\ObjectNotFoundException.java
+C:\Users\guipp\OneDrive\햞ea de Trabalho\todosimple\src\main\java\com\compact\todosimple\TodosimpleApplication.java
 C:\Users\guipp\OneDrive\햞ea de Trabalho\todosimple\src\main\java\com\compact\todosimple\controllers\UserController.java
 C:\Users\guipp\OneDrive\햞ea de Trabalho\todosimple\src\main\java\com\compact\todosimple\services\UserService.java
 C:\Users\guipp\OneDrive\햞ea de Trabalho\todosimple\src\main\java\com\compact\todosimple\models\Task.java
-C:\Users\guipp\OneDrive\햞ea de Trabalho\todosimple\src\main\java\com\compact\todosimple\models\User.java
 C:\Users\guipp\OneDrive\햞ea de Trabalho\todosimple\src\main\java\com\compact\todosimple\controllers\TaskController.java
-C:\Users\guipp\OneDrive\햞ea de Trabalho\todosimple\src\main\java\com\compact\todosimple\repositories\TaskRepository.java
-C:\Users\guipp\OneDrive\햞ea de Trabalho\todosimple\src\main\java\com\compact\todosimple\TodosimpleApplication.java
+C:\Users\guipp\OneDrive\햞ea de Trabalho\todosimple\src\main\java\com\compact\todosimple\services\exceptions\DataBindingViolationException.java
